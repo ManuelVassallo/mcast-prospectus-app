@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'landingpage',
+    loadChildren: () => import('./prospectus/landingpage/landingpage.module').then( m => m.LandingpagePageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./prospectus/menu/menu.module').then( m => m.MenuPageModule)
   }
 ];
 
