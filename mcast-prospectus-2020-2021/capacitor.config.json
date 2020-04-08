@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "MCAST Prospectus 2020/2021",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

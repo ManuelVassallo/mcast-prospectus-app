@@ -1,0 +1,7 @@
+{
+  "name": "MCAST Prospectus 2020/2021",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
