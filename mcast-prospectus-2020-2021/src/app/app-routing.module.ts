@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'institutes',
     loadChildren: () => import('./prospectus/institutes/institutes.module').then( m => m.InstitutesPageModule)
+  },
+  {
+    path: 'courselevels',
+    loadChildren: () => import('./prospectus/courselevels/courselevels.module').then( m => m.CourselevelsPageModule)
   }
 ];
 
