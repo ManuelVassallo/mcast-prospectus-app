@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'eventsatmcast',
     loadChildren: () => import('./prospectus/eventsatmcast/eventsatmcast.module').then( m => m.EventsatmcastPageModule)
+  },
+  {
+    path: 'principalandceo',
+    loadChildren: () => import('./prospectus/principalandceo/principalandceo.module').then( m => m.PrincipalandceoPageModule)
   }
 ];
 
