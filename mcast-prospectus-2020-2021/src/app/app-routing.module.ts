@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'ksmsmainaims',
     loadChildren: () => import('./prospectus/ksmsmainaims/ksmsmainaims.module').then( m => m.KsmsmainaimsPageModule)
+  },
+  {
+    path: 'eventsatmcast',
+    loadChildren: () => import('./prospectus/eventsatmcast/eventsatmcast.module').then( m => m.EventsatmcastPageModule)
   }
 ];
 
