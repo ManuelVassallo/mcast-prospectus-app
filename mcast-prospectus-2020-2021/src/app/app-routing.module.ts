@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'principalandceo',
     loadChildren: () => import('./prospectus/principalandceo/principalandceo.module').then( m => m.PrincipalandceoPageModule)
+  },
+  {
+    path: 'president',
+    loadChildren: () => import('./prospectus/president/president.module').then( m => m.PresidentPageModule)
   }
 ];
 
