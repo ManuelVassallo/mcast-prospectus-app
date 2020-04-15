@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () => import('./prospectus/about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'corporateservices',
+    loadChildren: () => import('./prospectus/corporateservices/corporateservices.module').then( m => m.CorporateservicesPageModule)
   }
 ];
 
