@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'kunsilstudentimcast',
     loadChildren: () => import('./prospectus/kunsilstudentimcast/kunsilstudentimcast.module').then( m => m.KunsilstudentimcastPageModule)
+  },
+  {
+    path: 'ksmsmainaims',
+    loadChildren: () => import('./prospectus/ksmsmainaims/ksmsmainaims.module').then( m => m.KsmsmainaimsPageModule)
   }
 ];
 
