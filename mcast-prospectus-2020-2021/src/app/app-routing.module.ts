@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: 'president',
     loadChildren: () => import('./prospectus/president/president.module').then( m => m.PresidentPageModule)
+  },
+  {
+    path: 'institutesummary',
+    loadChildren: () => import('./prospectus/institutesummary/institutesummary.module').then( m => m.InstitutesummaryPageModule)
   }
 ];
 
