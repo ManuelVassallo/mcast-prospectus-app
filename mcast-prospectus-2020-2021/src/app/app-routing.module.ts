@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'instituteofappliedscience',
     loadChildren: () => import('./prospectus/instituteofappliedscience/instituteofappliedscience.module').then( m => m.InstituteofappliedsciencePageModule)
+  },
+  {
+    path: 'coursepageinfo',
+    loadChildren: () => import('./prospectus/coursepageinfo/coursepageinfo.module').then( m => m.CoursepageinfoPageModule)
   }
 ];
 
