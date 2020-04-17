@@ -58,6 +58,10 @@ const routes: Routes = [
   {
     path: 'institutesummary',
     loadChildren: () => import('./prospectus/institutesummary/institutesummary.module').then( m => m.InstitutesummaryPageModule)
+  },
+  {
+    path: 'instituteofappliedscience',
+    loadChildren: () => import('./prospectus/instituteofappliedscience/instituteofappliedscience.module').then( m => m.InstituteofappliedsciencePageModule)
   }
 ];
 
