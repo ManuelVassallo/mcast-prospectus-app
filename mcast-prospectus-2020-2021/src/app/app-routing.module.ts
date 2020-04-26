@@ -12,59 +12,59 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'landingpage',
+    path: 'landingpage', //http://localhost:4200/landingpage
     loadChildren: () => import('./prospectus/landingpage/landingpage.module').then( m => m.LandingpagePageModule)
   },
   {
-    path: 'menu',
+    path: 'menu', //http://localhost:4200/menu
     loadChildren: () => import('./prospectus/menu/menu.module').then( m => m.MenuPageModule)
   },
   {
-    path: 'institutes',
+    path: 'institutes', //http://localhost:4200/institutes
     loadChildren: () => import('./prospectus/institutes/institutes.module').then( m => m.InstitutesPageModule)
   },
   {
-    path: 'courselevels',
+    path: 'courselevels', //http://localhost:4200/courselevels
     loadChildren: () => import('./prospectus/courselevels/courselevels.module').then( m => m.CourselevelsPageModule)
   },
   {
-    path: 'about',
+    path: 'about', //http://localhost:4200/about
     loadChildren: () => import('./prospectus/about/about.module').then( m => m.AboutPageModule)
   },
   {
-    path: 'corporateservices',
+    path: 'corporateservices', //http://localhost:4200/corporateservices
     loadChildren: () => import('./prospectus/corporateservices/corporateservices.module').then( m => m.CorporateservicesPageModule)
   },
   {
-    path: 'kunsilstudentimcast',
+    path: 'kunsilstudentimcast', //http://localhost:4200/kunsilstudentimcast
     loadChildren: () => import('./prospectus/kunsilstudentimcast/kunsilstudentimcast.module').then( m => m.KunsilstudentimcastPageModule)
   },
   {
-    path: 'ksmsmainaims',
+    path: 'ksmsmainaims', //http://localhost:4200/ksmsmainaims
     loadChildren: () => import('./prospectus/ksmsmainaims/ksmsmainaims.module').then( m => m.KsmsmainaimsPageModule)
   },
   {
-    path: 'eventsatmcast',
+    path: 'eventsatmcast', //http://localhost:4200/eventsatmcast
     loadChildren: () => import('./prospectus/eventsatmcast/eventsatmcast.module').then( m => m.EventsatmcastPageModule)
   },
   {
-    path: 'principalandceo',
+    path: 'principalandceo', //http://localhost:4200/principalandceo
     loadChildren: () => import('./prospectus/principalandceo/principalandceo.module').then( m => m.PrincipalandceoPageModule)
   },
   {
-    path: 'president',
+    path: 'president', //http://localhost:4200/presidenti
     loadChildren: () => import('./prospectus/president/president.module').then( m => m.PresidentPageModule)
   },
   {
-    path: 'institutesummary',
+    path: 'institutesummary', //http://localhost:4200/institutesummary
     loadChildren: () => import('./prospectus/institutesummary/institutesummary.module').then( m => m.InstitutesummaryPageModule)
   },
   {
-    path: 'instituteofappliedscience',
+    path: 'instituteofappliedscience', //http://localhost:4200/instituteofappliedscience
     loadChildren: () => import('./prospectus/instituteofappliedscience/instituteofappliedscience.module').then( m => m.InstituteofappliedsciencePageModule)
   },
   {
-    path: 'coursepageinfo',
+    path: 'coursepageinfo', //http://localhost:4200/coursepageinfo
     loadChildren: () => import('./prospectus/coursepageinfo/coursepageinfo.module').then( m => m.CoursepageinfoPageModule)
   }
 ];
