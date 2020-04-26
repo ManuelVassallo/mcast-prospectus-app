@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { InstituteofappliedsciencePageRoutingModule } from './instituteofappliedscience-routing.module';
 
 import { InstituteofappliedsciencePage } from './instituteofappliedscience.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InstituteofappliedsciencePageRoutingModule
+    InstituteofappliedsciencePageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [InstituteofappliedsciencePage]
 })

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { EventsatmcastPageRoutingModule } from './eventsatmcast-routing.module';
 
 import { EventsatmcastPage } from './eventsatmcast.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EventsatmcastPageRoutingModule
+    EventsatmcastPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [EventsatmcastPage]
 })

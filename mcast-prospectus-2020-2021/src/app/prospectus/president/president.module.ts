@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PresidentPageRoutingModule } from './president-routing.module';
 
 import { PresidentPage } from './president.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PresidentPageRoutingModule
+    PresidentPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [PresidentPage]
 })

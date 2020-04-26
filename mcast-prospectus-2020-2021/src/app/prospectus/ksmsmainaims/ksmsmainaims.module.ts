@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { KsmsmainaimsPageRoutingModule } from './ksmsmainaims-routing.module';
 
 import { KsmsmainaimsPage } from './ksmsmainaims.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    KsmsmainaimsPageRoutingModule
+    KsmsmainaimsPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [KsmsmainaimsPage]
 })
