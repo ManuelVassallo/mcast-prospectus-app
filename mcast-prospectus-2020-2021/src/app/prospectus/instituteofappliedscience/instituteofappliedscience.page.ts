@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-instituteofappliedscience',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstituteofappliedsciencePage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
+
+  courses(){
+    this.router.navigate(['courselevels']);
+  }
+
+  info(){
+    this.router.navigate(['institutesummary']);
+  }
 
   ngOnInit() {
   }

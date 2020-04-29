@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-courselevels',
@@ -7,7 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourselevelsPage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
+
+  ic(){
+
+  }
+
+  fc(){
+
+  }
+
+  d(){
+
+  }
+
+  ad(){
+
+  }
+
+  bsh(){
+    
+  }
 
   ngOnInit() {
   }
