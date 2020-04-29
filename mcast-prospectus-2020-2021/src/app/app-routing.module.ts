@@ -66,7 +66,15 @@ const routes: Routes = [
   {
     path: 'coursepageinfo', //http://localhost:4200/coursepageinfo
     loadChildren: () => import('./prospectus/coursepageinfo/coursepageinfo.module').then( m => m.CoursepageinfoPageModule)
+  },  {
+    path: 'institute-of-applied-science-courses',
+    loadChildren: () => import('./institutes/institute-of-applied-science-courses/institute-of-applied-science-courses.module').then( m => m.InstituteOfAppliedScienceCoursesPageModule)
+  },
+  {
+    path: 'institute-of-applied-science-course-level-list',
+    loadChildren: () => import('./institutes/institute-of-applied-science-course-level-list/institute-of-applied-science-course-level-list.module').then( m => m.InstituteOfAppliedScienceCourseLevelListPageModule)
   }
+
 ];
 
 @NgModule({
