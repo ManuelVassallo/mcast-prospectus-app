@@ -15,23 +15,23 @@ export class InstitutesPage implements OnInit {
   }
 
   ibmc(){
-    this.router.navigate(['']);
+    this.router.navigate(['institute-of-business-home-page']);
   }
 
   ics(){
-    this.router.navigate(['']);
+    this.router.navigate(['institute-of-community-service-home-page']);
   }
 
   ica(){
-    this.router.navigate(['']);
+    this.router.navigate(['institute-for-the-creative-arts-home-page']);
   }
 
   iet(){
-    this.router.navigate(['']);
+    this.router.navigate(['institute-of-engineering-and-transport-home-page']);
   }
 
   ict(){
-    this.router.navigate(['']);
+    this.router.navigate(['institute-of-ict-home-page']);
   }
 
   gc(){

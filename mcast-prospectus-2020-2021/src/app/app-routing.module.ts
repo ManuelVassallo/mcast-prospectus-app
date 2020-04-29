@@ -73,6 +73,26 @@ const routes: Routes = [
   {
     path: 'institute-of-applied-science-course-level-list',
     loadChildren: () => import('./institutes/institute-of-applied-science-course-level-list/institute-of-applied-science-course-level-list.module').then( m => m.InstituteOfAppliedScienceCourseLevelListPageModule)
+  },
+  {
+    path: 'institute-of-business-home-page',
+    loadChildren: () => import('./institutes/institute-of-business-home-page/institute-of-business-home-page.module').then( m => m.InstituteOfBusinessHomePagePageModule)
+  },
+  {
+    path: 'institute-of-community-service-home-page',
+    loadChildren: () => import('./institutes/institute-of-community-service-home-page/institute-of-community-service-home-page.module').then( m => m.InstituteOfCommunityServiceHomePagePageModule)
+  },
+  {
+    path: 'institute-for-the-creative-arts-home-page',
+    loadChildren: () => import('./institutes/institute-for-the-creative-arts-home-page/institute-for-the-creative-arts-home-page.module').then( m => m.InstituteForTheCreativeArtsHomePagePageModule)
+  },
+  {
+    path: 'institute-of-engineering-and-transport-home-page',
+    loadChildren: () => import('./institutes/institute-of-engineering-and-transport-home-page/institute-of-engineering-and-transport-home-page.module').then( m => m.InstituteOfEngineeringAndTransportHomePagePageModule)
+  },
+  {
+    path: 'institute-of-ict-home-page',
+    loadChildren: () => import('./institutes/institute-of-ict-home-page/institute-of-ict-home-page.module').then( m => m.InstituteOfICTHomePagePageModule)
   }
 
 ];
