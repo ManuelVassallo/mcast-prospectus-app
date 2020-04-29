@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button (click)="navigate()">
         <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
       </ion-button>  
     </ion-buttons>
@@ -9,7 +9,7 @@
     <ion-title text-center>{{ title }}</ion-title>
 
     <ion-buttons slot="end">
-      <ion-button>
+      <ion-button (click)="home()">
         <ion-icon name="home-outline" slot="icon-only"></ion-icon>
       </ion-button>
     </ion-buttons>
