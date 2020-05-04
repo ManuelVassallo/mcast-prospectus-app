@@ -113,6 +113,126 @@ const routes: Routes = [
   {
     path: 'course-levels-ict',
     loadChildren: () => import('./institutes/course-levels-ict/course-levels-ict.module').then( m => m.CourseLevelsICTPageModule)
+  },
+  {
+    path: 'foundation-ias',
+    loadChildren: () => import('./level/foundation-ias/foundation-ias.module').then( m => m.FoundationIasPageModule)
+  },
+  {
+    path: 'introductory-ias',
+    loadChildren: () => import('./level/introductory-ias/introductory-ias.module').then( m => m.IntroductoryIasPageModule)
+  },
+  {
+    path: 'diploma-ias',
+    loadChildren: () => import('./level/diploma-ias/diploma-ias.module').then( m => m.DiplomaIasPageModule)
+  },
+  {
+    path: 'advanced-diploma-ias',
+    loadChildren: () => import('./level/advanced-diploma-ias/advanced-diploma-ias.module').then( m => m.AdvancedDiplomaIasPageModule)
+  },
+  {
+    path: 'bachelor-ias',
+    loadChildren: () => import('./level/bachelor-ias/bachelor-ias.module').then( m => m.BachelorIasPageModule)
+  },
+  {
+    path: 'introductory-ica',
+    loadChildren: () => import('./level/introductory-ica/introductory-ica.module').then( m => m.IntroductoryIcaPageModule)
+  },
+  {
+    path: 'foundation-ica',
+    loadChildren: () => import('./level/foundation-ica/foundation-ica.module').then( m => m.FoundationIcaPageModule)
+  },
+  {
+    path: 'diploma-ica',
+    loadChildren: () => import('./level/diploma-ica/diploma-ica.module').then( m => m.DiplomaIcaPageModule)
+  },
+  {
+    path: 'advanced-diploma-ica',
+    loadChildren: () => import('./level/advanced-diploma-ica/advanced-diploma-ica.module').then( m => m.AdvancedDiplomaIcaPageModule)
+  },
+  {
+    path: 'bachelor-ica',
+    loadChildren: () => import('./level/bachelor-ica/bachelor-ica.module').then( m => m.BachelorIcaPageModule)
+  },
+  {
+    path: 'introductory-business',
+    loadChildren: () => import('./level/introductory-business/introductory-business.module').then( m => m.IntroductoryBusinessPageModule)
+  },
+  {
+    path: 'foundation-business',
+    loadChildren: () => import('./level/foundation-business/foundation-business.module').then( m => m.FoundationBusinessPageModule)
+  },
+  {
+    path: 'diploma-business',
+    loadChildren: () => import('./level/diploma-business/diploma-business.module').then( m => m.DiplomaBusinessPageModule)
+  },
+  {
+    path: 'advanced-diploma-business',
+    loadChildren: () => import('./level/advanced-diploma-business/advanced-diploma-business.module').then( m => m.AdvancedDiplomaBusinessPageModule)
+  },
+  {
+    path: 'bachelor-business',
+    loadChildren: () => import('./level/bachelor-business/bachelor-business.module').then( m => m.BachelorBusinessPageModule)
+  },
+  {
+    path: 'introductory-ics',
+    loadChildren: () => import('./level/introductory-ics/introductory-ics.module').then( m => m.IntroductoryIcsPageModule)
+  },
+  {
+    path: 'foundation-ics',
+    loadChildren: () => import('./level/foundation-ics/foundation-ics.module').then( m => m.FoundationIcsPageModule)
+  },
+  {
+    path: 'diploma-ics',
+    loadChildren: () => import('./level/diploma-ics/diploma-ics.module').then( m => m.DiplomaIcsPageModule)
+  },
+  {
+    path: 'advanced-diploma-ics',
+    loadChildren: () => import('./level/advanced-diploma-ics/advanced-diploma-ics.module').then( m => m.AdvancedDiplomaIcsPageModule)
+  },
+  {
+    path: 'bachelor-ics',
+    loadChildren: () => import('./level/bachelor-ics/bachelor-ics.module').then( m => m.BachelorIcsPageModule)
+  },
+  {
+    path: 'introductory-engineering',
+    loadChildren: () => import('./level/introductory-engineering/introductory-engineering.module').then( m => m.IntroductoryEngineeringPageModule)
+  },
+  {
+    path: 'foundation-engineering',
+    loadChildren: () => import('./level/foundation-engineering/foundation-engineering.module').then( m => m.FoundationEngineeringPageModule)
+  },
+  {
+    path: 'diploma-engineering',
+    loadChildren: () => import('./level/diploma-engineering/diploma-engineering.module').then( m => m.DiplomaEngineeringPageModule)
+  },
+  {
+    path: 'advanced-diploma-engineering',
+    loadChildren: () => import('./level/advanced-diploma-engineering/advanced-diploma-engineering.module').then( m => m.AdvancedDiplomaEngineeringPageModule)
+  },
+  {
+    path: 'bachelor-engineering',
+    loadChildren: () => import('./level/bachelor-engineering/bachelor-engineering.module').then( m => m.BachelorEngineeringPageModule)
+  },
+  {
+    path: 'introductory-ict',
+    loadChildren: () => import('./level/introductory-ict/introductory-ict.module').then( m => m.IntroductoryIctPageModule)
+  },
+  {
+    path: 'foundation-ict',
+    loadChildren: () => import('./level/foundation-ict/foundation-ict.module').then( m => m.FoundationIctPageModule)
+  },
+  {
+    path: 'diploma-ict',
+    loadChildren: () => import('./level/diploma-ict/diploma-ict.module').then( m => m.DiplomaIctPageModule)
+  },
+  {
+    path: 'advanced-diploma-ict',
+    loadChildren: () => import('./level/advanced-diploma-ict/advanced-diploma-ict.module').then( m => m.AdvancedDiplomaIctPageModule)
+  },
+  {
+    path: 'bachelor-ict',
+    loadChildren: () => import('./level/bachelor-ict/bachelor-ict.module').then( m => m.BachelorIctPageModule)
   }
 
 
