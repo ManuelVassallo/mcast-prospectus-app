@@ -11,7 +11,7 @@ export class InstituteOfBusinessHomePagePage implements OnInit {
   constructor(public router: Router) { }
 
   courses(){
-
+    this.router.navigate(['course-levels-business']);
   }
 
   info(){

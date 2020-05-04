@@ -11,7 +11,7 @@ export class InstituteOfCommunityServiceHomePagePage implements OnInit {
   constructor(public router: Router) { }
 
   courses(){
-
+    this.router.navigate(['course-levels-ics']);
   }
 
   info(){

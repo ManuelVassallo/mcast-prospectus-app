@@ -11,7 +11,7 @@ export class InstituteForTheCreativeArtsHomePagePage implements OnInit {
   constructor(public router: Router) { }
 
   courses(){
-    this.router.navigate(['']);
+    this.router.navigate(['course-levels-ica']);
   }
 
   info(){

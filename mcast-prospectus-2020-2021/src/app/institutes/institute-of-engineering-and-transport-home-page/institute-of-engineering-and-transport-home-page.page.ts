@@ -11,7 +11,7 @@ export class InstituteOfEngineeringAndTransportHomePagePage implements OnInit {
   constructor(public router: Router) { }
 
   courses(){
-
+    this.router.navigate(['course-levels-engineering']);
   }
 
   info(){

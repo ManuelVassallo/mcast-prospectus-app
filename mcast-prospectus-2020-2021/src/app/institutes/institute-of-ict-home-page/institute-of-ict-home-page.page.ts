@@ -11,7 +11,7 @@ export class InstituteOfICTHomePagePage implements OnInit {
   constructor(public router:Router) { }
 
   courses(){
-
+    this.router.navigate(['course-levels-ict']);
   }
 
   info(){
