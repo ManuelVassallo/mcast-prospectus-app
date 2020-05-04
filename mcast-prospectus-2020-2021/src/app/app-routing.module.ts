@@ -94,7 +94,27 @@ const routes: Routes = [
   {
     path: 'institute-of-ict-home-page', //http://localhost:4200/institute-of-ict-home-page
     loadChildren: () => import('./institutes/institute-of-ict-home-page/institute-of-ict-home-page.module').then( m => m.InstituteOfICTHomePagePageModule)
+  },  {
+    path: 'course-levels-ica',
+    loadChildren: () => import('./institutes/course-levels-ica/course-levels-ica.module').then( m => m.CourseLevelsICAPageModule)
+  },
+  {
+    path: 'course-levels-business',
+    loadChildren: () => import('./institutes/course-levels-business/course-levels-business.module').then( m => m.CourseLevelsBusinessPageModule)
+  },
+  {
+    path: 'course-levels-ics',
+    loadChildren: () => import('./institutes/course-levels-ics/course-levels-ics.module').then( m => m.CourseLevelsICSPageModule)
+  },
+  {
+    path: 'course-levels-engineering',
+    loadChildren: () => import('./institutes/course-levels-engineering/course-levels-engineering.module').then( m => m.CourseLevelsEngineeringPageModule)
+  },
+  {
+    path: 'course-levels-ict',
+    loadChildren: () => import('./institutes/course-levels-ict/course-levels-ict.module').then( m => m.CourseLevelsICTPageModule)
   }
+
 
 ];
 
