@@ -66,32 +66,33 @@ const routes: Routes = [
   {
     path: 'coursepageinfo', //http://localhost:4200/coursepageinfo
     loadChildren: () => import('./prospectus/coursepageinfo/coursepageinfo.module').then( m => m.CoursepageinfoPageModule)
-  },  {
-    path: 'institute-of-applied-science-courses',
+  },
+  {
+    path: 'institute-of-applied-science-courses', //http://localhost:4200/institute-of-applied-science-courses
     loadChildren: () => import('./institutes/institute-of-applied-science-courses/institute-of-applied-science-courses.module').then( m => m.InstituteOfAppliedScienceCoursesPageModule)
   },
   {
-    path: 'institute-of-applied-science-course-level-list',
+    path: 'institute-of-applied-science-course-level-list', //http://localhost:4200/institute-of-applied-science-course-level-list
     loadChildren: () => import('./institutes/institute-of-applied-science-course-level-list/institute-of-applied-science-course-level-list.module').then( m => m.InstituteOfAppliedScienceCourseLevelListPageModule)
   },
   {
-    path: 'institute-of-business-home-page',
+    path: 'institute-of-business-home-page', //http://localhost:4200/institute-of-business-home-page
     loadChildren: () => import('./institutes/institute-of-business-home-page/institute-of-business-home-page.module').then( m => m.InstituteOfBusinessHomePagePageModule)
   },
   {
-    path: 'institute-of-community-service-home-page',
+    path: 'institute-of-community-service-home-page', //http://localhost:4200/institute-of-community-service-home-page
     loadChildren: () => import('./institutes/institute-of-community-service-home-page/institute-of-community-service-home-page.module').then( m => m.InstituteOfCommunityServiceHomePagePageModule)
   },
   {
-    path: 'institute-for-the-creative-arts-home-page',
+    path: 'institute-for-the-creative-arts-home-page', //http://localhost:4200/institute-for-the-creative-arts-home-page
     loadChildren: () => import('./institutes/institute-for-the-creative-arts-home-page/institute-for-the-creative-arts-home-page.module').then( m => m.InstituteForTheCreativeArtsHomePagePageModule)
   },
   {
-    path: 'institute-of-engineering-and-transport-home-page',
+    path: 'institute-of-engineering-and-transport-home-page', //http://localhost:4200/institute-of-engineering-and-transport-home-page
     loadChildren: () => import('./institutes/institute-of-engineering-and-transport-home-page/institute-of-engineering-and-transport-home-page.module').then( m => m.InstituteOfEngineeringAndTransportHomePagePageModule)
   },
   {
-    path: 'institute-of-ict-home-page',
+    path: 'institute-of-ict-home-page', //http://localhost:4200/institute-of-ict-home-page
     loadChildren: () => import('./institutes/institute-of-ict-home-page/institute-of-ict-home-page.module').then( m => m.InstituteOfICTHomePagePageModule)
   }
 
