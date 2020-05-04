@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DiplomaBusinessPageRoutingModule } from './diploma-business-routing.module';
 
 import { DiplomaBusinessPage } from './diploma-business.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DiplomaBusinessPageRoutingModule
+    DiplomaBusinessPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [DiplomaBusinessPage]
 })

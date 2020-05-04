@@ -15,7 +15,7 @@ export class InstituteOfCommunityServiceHomePagePage implements OnInit {
   }
 
   info(){
-    
+    this.router.navigate(['institute-info-ics']);
   }
 
   ngOnInit() {

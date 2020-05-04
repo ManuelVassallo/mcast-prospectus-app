@@ -15,7 +15,7 @@ export class InstituteForTheCreativeArtsHomePagePage implements OnInit {
   }
 
   info(){
-    this.router.navigate(['']);
+    this.router.navigate(['institute-info-ica']);
   }
 
   ngOnInit() {

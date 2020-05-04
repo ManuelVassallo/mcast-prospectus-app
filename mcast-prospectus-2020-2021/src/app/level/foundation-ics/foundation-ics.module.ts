@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { FoundationIcsPageRoutingModule } from './foundation-ics-routing.module';
 
 import { FoundationIcsPage } from './foundation-ics.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FoundationIcsPageRoutingModule
+    FoundationIcsPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [FoundationIcsPage]
 })

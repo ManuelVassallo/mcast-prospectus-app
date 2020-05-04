@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-course-levels-business',
@@ -7,7 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseLevelsBusinessPage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
+
+  ic(){
+    this.router.navigate(['introductory-business']);
+  }
+
+  fc(){
+    this.router.navigate(['foundation-business']);
+  }
+
+  d(){
+    this.router.navigate(['diploma-business']);
+  }
+
+  ad(){
+    this.router.navigate(['advanced-diploma-business']);
+  }
+
+  bsh(){
+    this.router.navigate(['bachelor-business']);
+  }
 
   ngOnInit() {
   }

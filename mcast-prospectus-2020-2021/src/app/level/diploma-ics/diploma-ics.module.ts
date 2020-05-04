@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DiplomaIcsPageRoutingModule } from './diploma-ics-routing.module';
 
 import { DiplomaIcsPage } from './diploma-ics.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DiplomaIcsPageRoutingModule
+    DiplomaIcsPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [DiplomaIcsPage]
 })

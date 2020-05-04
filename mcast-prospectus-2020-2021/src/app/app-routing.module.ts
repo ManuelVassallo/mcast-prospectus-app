@@ -233,6 +233,26 @@ const routes: Routes = [
   {
     path: 'bachelor-ict',
     loadChildren: () => import('./level/bachelor-ict/bachelor-ict.module').then( m => m.BachelorIctPageModule)
+  },
+  {
+    path: 'institute-info-business',
+    loadChildren: () => import('./info/institute-info-business/institute-info-business.module').then( m => m.InstituteInfoBusinessPageModule)
+  },
+  {
+    path: 'institute-info-engineering',
+    loadChildren: () => import('./info/institute-info-engineering/institute-info-engineering.module').then( m => m.InstituteInfoEngineeringPageModule)
+  },
+  {
+    path: 'institute-info-ica',
+    loadChildren: () => import('./info/institute-info-ica/institute-info-ica.module').then( m => m.InstituteInfoIcaPageModule)
+  },
+  {
+    path: 'institute-info-ics',
+    loadChildren: () => import('./info/institute-info-ics/institute-info-ics.module').then( m => m.InstituteInfoIcsPageModule)
+  },
+  {
+    path: 'institute-info-ict',
+    loadChildren: () => import('./info/institute-info-ict/institute-info-ict.module').then( m => m.InstituteInfoIctPageModule)
   }
 
 

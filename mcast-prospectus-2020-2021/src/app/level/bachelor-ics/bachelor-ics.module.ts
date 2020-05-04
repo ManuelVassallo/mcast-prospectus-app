@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { BachelorIcsPageRoutingModule } from './bachelor-ics-routing.module';
 
 import { BachelorIcsPage } from './bachelor-ics.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BachelorIcsPageRoutingModule
+    BachelorIcsPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [BachelorIcsPage]
 })

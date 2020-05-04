@@ -15,7 +15,7 @@ export class InstituteOfEngineeringAndTransportHomePagePage implements OnInit {
   }
 
   info(){
-    
+    this.router.navigate(['institute-info-engineering']);
   }
 
   ngOnInit() {

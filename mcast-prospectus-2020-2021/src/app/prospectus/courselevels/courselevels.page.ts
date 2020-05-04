@@ -11,23 +11,23 @@ export class CourselevelsPage implements OnInit {
   constructor(public router: Router) { }
 
   ic(){
-
+    this.router.navigate(['introductory-ias']);
   }
 
   fc(){
-    
+    this.router.navigate(['foundation-ias']);
   }
 
   d(){
-
+    this.router.navigate(['diploma-ias']);
   }
 
   ad(){
-
+    this.router.navigate(['advanced-diploma-ias']);
   }
 
   bsh(){
-    
+    this.router.navigate(['bachelor-ias']);
   }
 
   ngOnInit() {

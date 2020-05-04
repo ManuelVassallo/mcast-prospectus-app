@@ -15,7 +15,7 @@ export class InstituteOfICTHomePagePage implements OnInit {
   }
 
   info(){
-    
+    this.router.navigate(['institute-info-ict']);
   }
 
   ngOnInit() {

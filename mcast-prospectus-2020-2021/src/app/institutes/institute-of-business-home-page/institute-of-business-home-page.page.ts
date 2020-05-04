@@ -15,7 +15,7 @@ export class InstituteOfBusinessHomePagePage implements OnInit {
   }
 
   info(){
-    
+    this.router.navigate(['institute-info-business']);
   }
 
   ngOnInit() {

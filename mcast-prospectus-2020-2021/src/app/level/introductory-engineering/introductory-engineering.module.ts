@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { IntroductoryEngineeringPageRoutingModule } from './introductory-engineering-routing.module';
 
 import { IntroductoryEngineeringPage } from './introductory-engineering.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    IntroductoryEngineeringPageRoutingModule
+    IntroductoryEngineeringPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [IntroductoryEngineeringPage]
 })

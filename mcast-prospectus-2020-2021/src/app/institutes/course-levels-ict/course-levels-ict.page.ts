@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-course-levels-ict',
@@ -7,8 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseLevelsICTPage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
+  ic(){
+    this.router.navigate(['introductory-ict']);
+  }
 
+  fc(){
+    this.router.navigate(['foundation-ict']);
+  }
+
+  d(){
+    this.router.navigate(['diploma-ict']);
+  }
+
+  ad(){
+    this.router.navigate(['advanced-diploma-ict']);
+  }
+
+  bsh(){
+    this.router.navigate(['bachelor-ict']);
+  }
   ngOnInit() {
   }
 

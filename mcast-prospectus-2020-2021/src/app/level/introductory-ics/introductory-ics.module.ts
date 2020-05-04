@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { IntroductoryIcsPageRoutingModule } from './introductory-ics-routing.module';
 
 import { IntroductoryIcsPage } from './introductory-ics.page';
+import { SharedComponentsModule } from 'src/app/modules/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    IntroductoryIcsPageRoutingModule
+    IntroductoryIcsPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [IntroductoryIcsPage]
 })
