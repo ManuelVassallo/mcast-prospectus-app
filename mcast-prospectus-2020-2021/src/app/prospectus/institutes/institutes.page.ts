@@ -35,20 +35,13 @@ export class InstitutesPage implements OnInit {
   }
 
   gc(){
-    this.router.navigate(['']);
-  }
-
-  gd(){
-    this.router.navigate(['']);
+    this.router.navigate(['gozo-campus-home-page']);
   }
 
   masters(){
-    this.router.navigate(['']);
+    this.router.navigate(['masters-home-page']);
   }
 
-  cpd(){
-    this.router.navigate(['']);
-  }
 
   ngOnInit() {
   }

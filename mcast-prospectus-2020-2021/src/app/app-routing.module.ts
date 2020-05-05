@@ -253,6 +253,46 @@ const routes: Routes = [
   {
     path: 'institute-info-ict',
     loadChildren: () => import('./info/institute-info-ict/institute-info-ict.module').then( m => m.InstituteInfoIctPageModule)
+  },
+  {
+    path: 'gozo-campus-home-page',
+    loadChildren: () => import('./institutes/gozo-campus-home-page/gozo-campus-home-page.module').then( m => m.GozoCampusHomePagePageModule)
+  },
+  {
+    path: 'masters-home-page',
+    loadChildren: () => import('./institutes/masters-home-page/masters-home-page.module').then( m => m.MastersHomePagePageModule)
+  },
+  {
+    path: 'course-levels-gozo',
+    loadChildren: () => import('./institutes/course-levels-gozo/course-levels-gozo.module').then( m => m.CourseLevelsGozoPageModule)
+  },
+  {
+    path: 'institute-info-gozo',
+    loadChildren: () => import('./info/institute-info-gozo/institute-info-gozo.module').then( m => m.InstituteInfoGozoPageModule)
+  },
+  {
+    path: 'courses-list-masters',
+    loadChildren: () => import('./institutes/courses-list-masters/courses-list-masters.module').then( m => m.CoursesListMastersPageModule)
+  },
+  {
+    path: 'introductory-gozo',
+    loadChildren: () => import('./level/introductory-gozo/introductory-gozo.module').then( m => m.IntroductoryGozoPageModule)
+  },
+  {
+    path: 'foundation-gozo',
+    loadChildren: () => import('./level/foundation-gozo/foundation-gozo.module').then( m => m.FoundationGozoPageModule)
+  },
+  {
+    path: 'diploma-gozo',
+    loadChildren: () => import('./level/diploma-gozo/diploma-gozo.module').then( m => m.DiplomaGozoPageModule)
+  },
+  {
+    path: 'advanced-diploma-gozo',
+    loadChildren: () => import('./level/advanced-diploma-gozo/advanced-diploma-gozo.module').then( m => m.AdvancedDiplomaGozoPageModule)
+  },
+  {
+    path: 'bachelor-gozo',
+    loadChildren: () => import('./level/bachelor-gozo/bachelor-gozo.module').then( m => m.BachelorGozoPageModule)
   }
 
 
