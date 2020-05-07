@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InstitutesService } from 'src/app/services/institutes.service';
 
 @Component({
   selector: 'app-coursepageinfo',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursepageinfoPage implements OnInit {
 
-  constructor() { }
+  constructor(public institutesService: InstitutesService) { }
 
-  ngOnInit() {
+  ngOnInit() 
+  {
+    console.log("Starting to load...");
+    this.institutesService.preload();
+    console.log("Finished.");
   }
 
 }
