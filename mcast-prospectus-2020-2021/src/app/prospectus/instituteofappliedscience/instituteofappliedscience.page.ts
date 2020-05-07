@@ -10,6 +10,8 @@ export class InstituteofappliedsciencePage implements OnInit {
 
   constructor(public router: Router) { }
 
+  //redirection to other pages
+
   courses(){
     this.router.navigate(['courselevels']);
   }

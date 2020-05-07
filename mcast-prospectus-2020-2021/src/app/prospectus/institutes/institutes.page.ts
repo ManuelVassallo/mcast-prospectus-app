@@ -10,6 +10,9 @@ export class InstitutesPage implements OnInit {
 
   constructor(private router: Router) { }
 
+  //when menu buttons are pressed
+  //take the user to their respective page
+
   ias(){
     this.router.navigate(['instituteofappliedscience']);
   }

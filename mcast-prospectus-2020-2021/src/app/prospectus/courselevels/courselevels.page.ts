@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 export class CourselevelsPage implements OnInit {
 
   constructor(public router: Router) { }
-
+  
+  // redirection to other pages
   ic(){
     this.router.navigate(['introductory-ias']);
   }
