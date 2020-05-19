@@ -10,19 +10,19 @@ export class BachelorIcsPage implements OnInit {
 
   constructor(public router: Router) { }
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ica-hd-ey']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['ics-ba-h-sc']);
   }
 
   cn3(){
-    this.router.navigate(['']);
+    this.router.navigate(['ics-ba-ie']);
   }
 
   cn4(){
-    this.router.navigate(['']);
+    this.router.navigate(['ics-ba-h-s']);
   }
 
   cn5(){

@@ -11,7 +11,7 @@ export class FoundationIcaPage implements OnInit {
   constructor(public router: Router) { }
 
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ica-fc-ca']);
   }
 
   cn2(){

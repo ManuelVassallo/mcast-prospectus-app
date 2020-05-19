@@ -10,7 +10,7 @@ export class DiplomaBusinessPage implements OnInit {
 
   constructor(public router: Router) { }
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['d-b']);
   }
 
   cn2(){

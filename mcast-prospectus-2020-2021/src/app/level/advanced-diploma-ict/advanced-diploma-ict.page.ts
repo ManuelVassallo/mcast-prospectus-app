@@ -10,15 +10,15 @@ export class AdvancedDiplomaIctPage implements OnInit {
 
   constructor(public router: Router) { }
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-ad-it-c']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-ad-it-m']);
   }
 
   cn3(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-ad-it-s']);
   }
 
   cn4(){

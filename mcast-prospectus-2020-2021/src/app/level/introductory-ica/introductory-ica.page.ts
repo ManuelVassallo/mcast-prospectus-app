@@ -11,7 +11,7 @@ export class IntroductoryIcaPage implements OnInit {
   constructor(public router: Router) { }
 
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ica-ic-ad']);
   }
 
   cn2(){

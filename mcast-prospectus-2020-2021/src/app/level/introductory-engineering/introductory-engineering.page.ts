@@ -11,11 +11,11 @@ export class IntroductoryEngineeringPage implements OnInit {
   constructor(public router: Router) { }
 
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['engineering-ic-ce']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['engineering-ic-e']);
   }
 
   cn3(){

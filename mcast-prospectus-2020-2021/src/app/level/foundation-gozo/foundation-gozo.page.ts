@@ -12,19 +12,19 @@ export class FoundationGozoPage implements OnInit {
 
   
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['gozo-fc-c']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['gozo-fc-wb']);
   }
 
   cn3(){
-    this.router.navigate(['']);
+    this.router.navigate(['gozo-fc-ict']);
   }
 
   cn4(){
-    this.router.navigate(['']);
+    this.router.navigate(['gozo-fc-es']);
   }
 
   cn5(){

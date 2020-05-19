@@ -10,11 +10,11 @@ export class DiplomaIctPage implements OnInit {
 
   constructor(public router: Router) { }
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-d-ict']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-d-ig']);
   }
 
   cn3(){

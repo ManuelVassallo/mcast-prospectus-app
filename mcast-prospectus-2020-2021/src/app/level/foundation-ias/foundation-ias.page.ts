@@ -11,11 +11,11 @@ export class FoundationIasPage implements OnInit {
   constructor(public router: Router) { }
 
   cn1(){
-    this.router.navigate(['coursepageinfo']);
+    this.router.navigate(['fc-applied-science']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['fc-horticulture-and-animal-care']);
   }
 
   cn3(){

@@ -11,7 +11,7 @@ export class FoundationBusinessPage implements OnInit {
   constructor(public router: Router) { }
 
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['fc-b']);
   }
 
   cn2(){

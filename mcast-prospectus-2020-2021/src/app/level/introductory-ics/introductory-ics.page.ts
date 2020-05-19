@@ -11,11 +11,11 @@ export class IntroductoryIcsPage implements OnInit {
   constructor(public router: Router) { }
 
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ic-c']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['ic-h']);
   }
 
   cn3(){

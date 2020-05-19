@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InstitutesService } from 'src/app/services/institutes.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-coursepageinfo',
@@ -8,13 +9,21 @@ import { InstitutesService } from 'src/app/services/institutes.service';
 })
 export class CoursepageinfoPage implements OnInit {
 
-  constructor(public institutesService: InstitutesService) { }
+  /**
+   *  The Institutes List
+   */
+  public institute: any = null;
+
+  constructor(
+    public route: ActivatedRoute,
+    public institutesService: InstitutesService) { }
 
   ngOnInit() 
   {
-    console.log("Starting to load...");
-    this.institutesService.preload();
-    console.log("Finished.");
+    const code = this.route.snapshot.params.code;
+    this.institute = this.institutesService.getInstitute(code);
+    
+    console.log(code);
   }
 
 }

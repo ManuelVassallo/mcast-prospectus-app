@@ -10,19 +10,19 @@ export class DiplomaIcaPage implements OnInit {
 
   constructor(public router: Router) { }
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ica-d-ad']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['ica-d-pa']);
   }
 
   cn3(){
-    this.router.navigate(['']);
+    this.router.navigate(['ica-d-m']);
   }
 
   cn4(){
-    this.router.navigate(['']);
+    this.router.navigate(['ica-d-p']);
   }
 
   cn5(){

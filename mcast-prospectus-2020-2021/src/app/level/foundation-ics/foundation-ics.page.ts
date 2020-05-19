@@ -11,15 +11,15 @@ export class FoundationIcsPage implements OnInit {
   constructor(public router: Router) { }
 
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['fc-c']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['fc-wb-b-h']);
   }
 
   cn3(){
-    this.router.navigate(['']);
+    this.router.navigate(['fc-s']);
   }
 
   cn4(){

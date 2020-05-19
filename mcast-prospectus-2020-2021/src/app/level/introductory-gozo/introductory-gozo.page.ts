@@ -12,11 +12,11 @@ export class IntroductoryGozoPage implements OnInit {
 
   
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['gozo-ic-vs']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['gozo-ic-ce']);
   }
 
   cn3(){

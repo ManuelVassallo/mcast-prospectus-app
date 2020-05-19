@@ -10,19 +10,19 @@ export class BachelorBusinessPage implements OnInit {
 
   constructor(public router: Router) { }
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['hd-at']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['ba-be']);
   }
 
   cn3(){
-    this.router.navigate(['']);
+    this.router.navigate(['ba-pf']);
   }
 
   cn4(){
-    this.router.navigate(['']);
+    this.router.navigate(['ba-fsm']);
   }
 
   cn5(){

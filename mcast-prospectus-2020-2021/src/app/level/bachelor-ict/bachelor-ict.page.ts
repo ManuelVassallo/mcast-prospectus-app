@@ -10,19 +10,19 @@ export class BachelorIctPage implements OnInit {
 
   constructor(public router: Router) { }
   cn1(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-ba-csn']);
   }
 
   cn2(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-ba-sd']);
   }
 
   cn3(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-ba-msd']);
   }
 
   cn4(){
-    this.router.navigate(['']);
+    this.router.navigate(['ict-ba-ba']);
   }
 
   cn5(){
