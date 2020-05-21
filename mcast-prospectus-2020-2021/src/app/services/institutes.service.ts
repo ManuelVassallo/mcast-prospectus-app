@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import * as xml2js from 'xml2js';
 
 @Injectable({
   providedIn: 'root'
@@ -26,12 +25,14 @@ export class InstitutesService
           .set('Access-Control-Allow-Origin', '*')
           .append('Access-Control-Allow-Methods', 'GET')
           .append('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method')
-
     })
       .toPromise()
       .then(
         // Success
-        (content:string) => { this._data = content; },
+        (content:string) => {
+          this._data = content;
+          console.log(content);
+        },
           
 
         // Error
@@ -40,28 +41,6 @@ export class InstitutesService
         }
       );
   }
-
-  /**
-   * Interprets the xml information into json (so the app understands the data)
-   * @param content The Xml data as a string.
-   */
-  private parseData(content: string)
-  {
-    xml2js.parseString(content, {
-      attrkey: 'attr',
-      trim: true
-    }, (error, result) => {
-      //check for erros first so we can stop the process if something happens
-      if (error != null)
-      {
-        console.error(error);
-        return;
-      }
-      //successful process goes here
-      this._data = result.prospectus;
-      console.log(this._data);
-    });
-  }
   
   /**
    * Will retrieve one institute from the list
@@ -69,12 +48,30 @@ export class InstitutesService
    */
   public getInstitute(code: string): any
   {
-    return this._data.institute.find(i => i.attr.url == code);
+    return this._data.find(institute => institute.code == code);
   }
 
   public getCourse(code: string): any
   {
     return this._data.course.find(i => i.attr.url == code);
+  }
+
+  public getCoursesByLevel(code: string, mqf: number): any[]
+  {
+    const institute = this.getInstitute(code);
+    return institute.courses.filter(course => course.mqf == mqf);
+  }
+
+  public getInstituteLevels(code: string): any
+  {
+    const levels = {};
+    
+    for (var i = 1; i < 7; i++)
+    {
+      levels[i] = this.getCoursesByLevel(code, i);
+    }
+
+    return levels;
   }
 
   /**

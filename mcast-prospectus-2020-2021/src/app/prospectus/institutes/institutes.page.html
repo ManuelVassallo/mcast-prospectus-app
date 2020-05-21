@@ -1,44 +1,12 @@
 <app-prospectus-header title="Institutes"></app-prospectus-header>
 
 <ion-content>
-      <section>
-        <ion-button (click)="ias()" expand="block" style="--background:#5da733">Institute of <br> the Applied Science 
-        </ion-button>
-      </section>
 
-      <section>
-        <ion-button (click)="ibmc()" expand="block" style="--background:#db0642">Institute of Business <br> Managment & Commerce <br>
-        </ion-button>
-      </section>
-      
-      <section>
-        <ion-button (click)="ics()" expand="block" style="--background:#f4b719">Institute of <br> Community Services
-        </ion-button>
-      </section>
-
-      <section>
-        <ion-button (click)="ica()" expand="block" style="--background:#ca2f88">Institute for <br> the Creative Arts
-        </ion-button>
-      </section>
-
-      <section>
-        <ion-button (click)="iet()" expand="block" style="--background:#104b9b">Institute of Engineering <br> and Transport <br>
-        </ion-button>
-      </section>
-
-      <section>
-        <ion-button (click)="ict()" expand="block" style="--background:#e96c24">Institute of Information <br> & Communication Technology <br>
-        </ion-button>
-      </section>
-
-      <section>
-        <ion-button (click)="gc()" expand="block" style="--background:#1abcee">Gozo Campus 
-        </ion-button>
-      </section>
-
-      <section>
-        <ion-button (click)="masters()" expand="block" style="--background:#752980">Masters
-        </ion-button>
+      <section *ngFor="let institute of institutes">
+        <ion-button
+          [routerLink]="['/', 'institutes-info', institute.code]"
+          expand="block"
+          color="{{ institute.colour }}">{{ institute.name_en }}</ion-button>
       </section>
 
 </ion-content>

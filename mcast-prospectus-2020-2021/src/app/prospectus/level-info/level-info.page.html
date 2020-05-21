@@ -1,0 +1,25 @@
+<app-prospectus-header></app-prospectus-header>
+
+<ion-content>
+<Section *ngFor= "let course of institute.courses">
+<div class="title">
+  <header>{{ course.title }}</header>
+</div>
+
+  <ion-card>
+    <ion-card-title>Course Duration</ion-card-title>
+    <ion-card-content>{{ course.duration }} year/s</ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-title>Entry Requirements</ion-card-title>
+    <ion-card-content>{{ course.req_other }}</ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-title>Course Description</ion-card-title>
+    <ion-card-content *ngFor="let paragraph of course.desc_en" >{{ paragraph }}</ion-card-content>
+  </ion-card>
+</Section> 
+
+</ion-content>

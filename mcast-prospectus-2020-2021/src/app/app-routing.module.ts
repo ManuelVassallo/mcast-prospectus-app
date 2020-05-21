@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'menu',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'institutes', //http://localhost:4200/institutes
     loadChildren: () => import('./prospectus/institutes/institutes.module').then( m => m.InstitutesPageModule)
+  },
+  {
+    path: 'institutes-info/:code', //http://localhost:4200/institutes-info/ias
+    loadChildren: () => import('./prospectus/institutes-info/institutes-info.module').then( m => m.InstitutesInfoPageModule)
   },
   {
     path: 'courselevels', //http://localhost:4200/courselevels
@@ -902,6 +906,14 @@ const routes: Routes = [
   {
     path: 'masters-ess',
     loadChildren: () => import('./masters/masters-ess/masters-ess.module').then( m => m.MastersEssPageModule)
+  },
+  {
+    path: 'course-levels/:code', // http://localhost:4200/course-levels/ias
+    loadChildren: () => import('./prospectus/course-levels/course-levels.module').then( m => m.CourseLevelsPageModule)
+  },
+  {
+    path: 'level-info/:code', // http://localhost:4200/level-info/ias
+    loadChildren: () => import('./prospectus/level-info/level-info.module').then( m => m.LevelInfoPageModule)
   }
 
 

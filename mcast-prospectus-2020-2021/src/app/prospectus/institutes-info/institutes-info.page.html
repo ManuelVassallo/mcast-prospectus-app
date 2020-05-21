@@ -1,0 +1,21 @@
+<app-prospectus-header></app-prospectus-header>
+
+<ion-content>
+  <header text-center>{{ institute.name_en }}</header>
+
+
+    <ion-button
+      [routerLink]="['/', 'course-levels', institute.code]"
+      background-color= "institute.color">
+      <ion-icon name="school-outline" text-align= "center"></ion-icon>
+      <label>Courses</label>
+    </ion-button>
+
+
+<ion-card>
+    <ion-card-content>
+      {{ institute.desc_en }}
+    </ion-card-content>
+</ion-card>
+  
+</ion-content>

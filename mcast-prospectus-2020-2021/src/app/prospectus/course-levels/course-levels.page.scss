@@ -1,0 +1,18 @@
+:root{
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+}
+
+ion-item{
+    font-size: 20px;
+    top: 10px;
+    bottom: 10px;
+    height: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+section:not(.full-width),
+.full-width > header{
+    padding: 0 15px;
+}

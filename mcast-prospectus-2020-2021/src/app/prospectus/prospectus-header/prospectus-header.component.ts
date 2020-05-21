@@ -23,7 +23,7 @@ export class ProspectusHeaderComponent implements OnInit {
   @Input('backlink') backlink: any = ['/'];
 
   public navigate() {
-    this.router.navigateByUrl(this.backlink, { replaceUrl: true });
+    this.router.navigate(this.backlink, { replaceUrl: true });
   }
 
   ngOnInit() {}

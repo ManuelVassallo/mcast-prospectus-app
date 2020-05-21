@@ -1,0 +1,50 @@
+<app-prospectus-header></app-prospectus-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item
+      *ngIf="levels[1].length > 0"
+      [routerLink]="['/', 'level-info', institute.courses]"
+      detail="true"
+      detailIcon="chevron-forward">
+      Introductory Certificate
+    </ion-item>
+
+    <ion-item
+      *ngIf="levels[2].length > 0"
+      detail="true"
+      detailIcon="chevron-forward">
+      Foundation Certificate
+    </ion-item>
+
+    <ion-item
+      *ngIf="levels[3].length > 0"
+      detail="true"
+      detailIcon="chevron-forward">
+      Diploma
+    </ion-item>
+
+    <ion-item
+      *ngIf="levels[4].length > 0"
+      detail="true"
+      detailIcon="chevron-forward">
+      Advanced Diploma
+    </ion-item>
+
+    <ion-item
+      *ngIf="levels[5].length > 0"
+      detail="true"
+      detailIcon="chevron-forward">
+      Higher Diploma
+    </ion-item>
+
+    <ion-item
+      *ngIf="levels[6].length > 0"
+      detail="true"
+      detailIcon="chevron-forward">
+      Bachelors Degree
+    </ion-item>
+
+  </ion-list>
+</ion-content>

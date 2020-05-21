@@ -1,52 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { InstitutesService } from 'src/app/services/institutes.service';
 
 @Component({
   selector: 'app-institutes',
   templateUrl: './institutes.page.html',
   styleUrls: ['./institutes.page.scss'],
 })
-export class InstitutesPage implements OnInit {
+export class InstitutesPage implements OnInit
+{
+  public institutes: any[] = [];
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    public institutesService: InstitutesService
+  ) { }
 
-  //when menu buttons are pressed
-  //take the user to their respective page
-
-  ias(){
-    this.router.navigate(['instituteofappliedscience']);
-  }
-
-  ibmc(){
-    this.router.navigate(['institute-of-business-home-page']);
-  }
-
-  ics(){
-    this.router.navigate(['institute-of-community-service-home-page']);
-  }
-
-  ica(){
-    this.router.navigate(['institute-for-the-creative-arts-home-page']);
-  }
-
-  iet(){
-    this.router.navigate(['institute-of-engineering-and-transport-home-page']);
-  }
-
-  ict(){
-    this.router.navigate(['institute-of-ict-home-page']);
-  }
-
-  gc(){
-    this.router.navigate(['gozo-campus-home-page']);
-  }
-
-  masters(){
-    this.router.navigate(['masters-home-page']);
-  }
-
-
-  ngOnInit() {
+  ngOnInit()
+  {
+    this.institutes = this.institutesService.getInstitutes();
   }
 
 }
