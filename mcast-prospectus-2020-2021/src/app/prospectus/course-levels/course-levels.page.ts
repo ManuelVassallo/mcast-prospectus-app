@@ -9,6 +9,8 @@ import { InstitutesService } from 'src/app/services/institutes.service';
 })
 export class CourseLevelsPage implements OnInit
 {
+  public code: string = ''
+
   public levels: any = {};
 
   constructor(
@@ -20,8 +22,8 @@ export class CourseLevelsPage implements OnInit
   {
     // when clicked on level, can transfer to:
     // localhost:4200/level-info/ias/1
-    const code = this.route.snapshot.params.code;
-    this.levels = this.institutesService.getInstituteLevels(code);
+    this.code = this.route.snapshot.params.code;
+    this.levels = this.institutesService.getInstituteLevels(this.code);
   }
 
 }

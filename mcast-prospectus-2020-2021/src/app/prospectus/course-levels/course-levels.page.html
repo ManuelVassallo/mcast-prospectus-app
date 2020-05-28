@@ -5,7 +5,7 @@
 
     <ion-item
       *ngIf="levels[1].length > 0"
-      [routerLink]="['/', 'level-info', institute.courses]"
+      [routerLink]="['/', 'level-info', code, '1']"
       detail="true"
       detailIcon="chevron-forward">
       Introductory Certificate
@@ -13,6 +13,7 @@
 
     <ion-item
       *ngIf="levels[2].length > 0"
+      [routerLink]="['/', 'level-info', code, '2']"
       detail="true"
       detailIcon="chevron-forward">
       Foundation Certificate
@@ -20,6 +21,7 @@
 
     <ion-item
       *ngIf="levels[3].length > 0"
+      [routerLink]="['/', 'level-info', code, '3']"
       detail="true"
       detailIcon="chevron-forward">
       Diploma
@@ -27,6 +29,7 @@
 
     <ion-item
       *ngIf="levels[4].length > 0"
+      [routerLink]="['/', 'level-info', code, '4']"
       detail="true"
       detailIcon="chevron-forward">
       Advanced Diploma
@@ -34,6 +37,7 @@
 
     <ion-item
       *ngIf="levels[5].length > 0"
+      [routerLink]="['/', 'level-info', code, '5']"
       detail="true"
       detailIcon="chevron-forward">
       Higher Diploma
@@ -41,6 +45,7 @@
 
     <ion-item
       *ngIf="levels[6].length > 0"
+      [routerLink]="['/', 'level-info', code, '6']"
       detail="true"
       detailIcon="chevron-forward">
       Bachelors Degree

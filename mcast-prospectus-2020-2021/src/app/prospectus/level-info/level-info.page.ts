@@ -9,7 +9,7 @@ import { InstitutesService } from 'src/app/services/institutes.service';
 })
 export class LevelInfoPage implements OnInit {
 
-  public levels: any = {};
+  public courses: any = {};
 
   constructor(
     public route: ActivatedRoute,
@@ -19,7 +19,10 @@ export class LevelInfoPage implements OnInit {
   ngOnInit() 
   {
     const code = this.route.snapshot.params.code;
-    this.levels = this.institutesService.getInstituteLevels(code);
+    const level = this.route.snapshot.params.level;
+    this.courses = this.institutesService.getCoursesByLevel(code, level);
+
+    console.log(this.courses);
   }
 
 }

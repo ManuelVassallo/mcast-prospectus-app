@@ -6,13 +6,14 @@
 
     <ion-button
       [routerLink]="['/', 'course-levels', institute.code]"
-      background-color= "institute.color">
+      [style]="institutesService.getInstituteColorStyle('--background', institute.color)">
       <ion-icon name="school-outline" text-align= "center"></ion-icon>
       <label>Courses</label>
     </ion-button>
 
 
-<ion-card>
+<ion-card
+  [style]="institutesService.getInstituteColorStyle('border-color', institute.color)">
     <ion-card-content>
       {{ institute.desc_en }}
     </ion-card-content>

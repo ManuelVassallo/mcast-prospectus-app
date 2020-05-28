@@ -912,7 +912,7 @@ const routes: Routes = [
     loadChildren: () => import('./prospectus/course-levels/course-levels.module').then( m => m.CourseLevelsPageModule)
   },
   {
-    path: 'level-info/:code', // http://localhost:4200/level-info/ias
+    path: 'level-info/:code/:level', // http://localhost:4200/level-info/ias/1
     loadChildren: () => import('./prospectus/level-info/level-info.module').then( m => m.LevelInfoPageModule)
   }
 

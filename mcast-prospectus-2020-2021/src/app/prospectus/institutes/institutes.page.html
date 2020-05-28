@@ -6,7 +6,7 @@
         <ion-button
           [routerLink]="['/', 'institutes-info', institute.code]"
           expand="block"
-          color="{{ institute.colour }}">{{ institute.name_en }}</ion-button>
+          [style]="institutesService.getInstituteColorStyle('--background', institute.color)">{{ institute.name_en }}</ion-button>
       </section>
 
 </ion-content>

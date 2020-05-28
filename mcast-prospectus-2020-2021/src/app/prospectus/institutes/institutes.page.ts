@@ -20,5 +20,4 @@ export class InstitutesPage implements OnInit
   {
     this.institutes = this.institutesService.getInstitutes();
   }
-
 }

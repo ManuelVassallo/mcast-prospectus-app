@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class InstitutesService
 
   //import HttpClient to this class
   constructor(
+    private sanitizer: DomSanitizer,
     public http: HttpClient
   ) { } 
 
@@ -41,6 +43,11 @@ export class InstitutesService
         }
       );
   }
+
+  public getInstituteColorStyle(style: string, color: string): any
+  {
+    return this.sanitizer.bypassSecurityTrustStyle(`${style}: ${color}`);
+  }
   
   /**
    * Will retrieve one institute from the list
@@ -53,7 +60,8 @@ export class InstitutesService
 
   public getCourse(code: string): any
   {
-    return this._data.course.find(i => i.attr.url == code);
+    const institute = this._data.find(institute => institute.courses.find(course => course.code == code));
+    return institute.courses.find(course => course.code == code);
   }
 
   public getCoursesByLevel(code: string, mqf: number): any[]
